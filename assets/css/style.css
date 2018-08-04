@@ -1,0 +1,77 @@
+body {
+    background: url('https://stardate.org/sites/default/files/styles/9col/public/images/gallery/lagoon_nebula_hst.png?itok=wyrcc1-U');
+    background-repeat: cover;
+    background-size: 2200px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(212, 85, 106);
+    font-size: 36px;
+}
+/********************************************************************/
+/* Start Screen
+/********************************************************************/
+h1 {
+    font-size: 66px;
+    color: rgb(83, 9, 83);
+    margin-bottom: 50px;
+    margin-top: 25px;
+    text-decoration: underline;
+}
+
+h3, h5 {
+    margin-bottom: 40px;
+}
+
+#start-screen {
+    width: 720px;
+    height: 400px;
+    background: black;
+    margin: 250px auto;
+    border: 2px solid pink;
+    text-align: center;
+}
+/********************************************************************/
+/* Question Screen
+/********************************************************************/
+header {
+    font-size: 66px;
+    color: rgb(83, 9, 83);
+    margin-bottom: 50px;
+    margin-top: 25px;
+    text-decoration: underline;
+}
+
+p {
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: rgb(4, 4, 112)
+}
+
+h2 {
+    color: orangered;
+}
+
+#question-screen {
+    width: 960px;
+    background: black;
+    margin: 20px auto;
+    border: 2px solid pink;
+    text-align: center;
+}
+
+#submit-button {
+    margin-bottom: 20px;
+}
+/********************************************************************/
+/* Results Screen
+/********************************************************************/
+#results-screen {
+    width: 720px;
+    background: black;
+    margin: 250px auto;
+    border: 2px solid pink;
+    text-align: center;
+}
+
+#reset-button {
+    margin-bottom: 20px;
+}

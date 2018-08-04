@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Trivia Game</title>
+
+    <!-- jQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <!-- Reset CSS -->
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+    <!-- My CSS -->
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+</head>
+<body>
+
+        <div id="start-screen">
+            <h1>Space Trivia!</h1>
+            <h3>You have 120 seconds to answer 10 questions!</h3>
+            <h5>Click to start!</h5>
+            <button type="button" class="btn btn-dark" id="start-button">Begin</button>
+        </div>
+
+
+        <div id="question-screen">
+            <header>Space Trivia!</header>
+            
+            <h2><p>Time Remaining: </p><div id="timer">60</div></h2>
+            <br>
+
+            <form id ="quiz" name ="quiz">
+          
+                <p>1. What is the coldest place in the universe?</p>
+                <input id="q1a" type="radio" name="q1" value="a"> The Dark Side of the Moon<br>
+                <input id="q1b" type="radio" name="q1" value="b"> The Boomerang Nebula <br>
+                <input id="q1c" type="radio" name="q1" value="c"> Pluto <br>
+                <input id="q1d" type="radio" name="q1" value="d"> The Cold Atom Lab<br>
+                <br>
+
+                <p>2. What is the hottest place in the universe?</p>
+                <input id="q1a" type="radio" name="q2" value="a"> The Sun <br>
+                <input id="q1b" type="radio" name="q2" value="b"> The Constellation Virgo <br>
+                <input id="q1c" type="radio" name="q2" value="c"> A Supernova <br>
+                <input id="q1d" type="radio" name="q2" value="d"> Large Hadron Collider <br>
+                <br>
+
+                <p>3. How old is the universe in light years?</p>
+                <input id="q1a" type="radio" name="q3" value="a"> 13.8 billion light years old <br>
+                <input id="q1b" type="radio" name="q3" value="b"> 1.38 billion light years old <br>
+                <input id="q1c" type="radio" name="q3" value="c"> 138 million light years old <br>
+                <input id="q1d" type="radio" name="q3" value="d"> 13.8 million light years old <br>
+                <br>
+
+                <p>4. What percent of the universe is dark matter?</p>
+                <input id="q1a" type="radio" name="q4" value="a"> 7% <br>
+                <input id="q1b" type="radio" name="q4" value="b"> 17% <br>
+                <input id="q1c" type="radio" name="q4" value="c"> 27% <br>
+                <input id="q1d" type="radio" name="q4" value="d"> 37% <br>
+                <br>
+
+                <p>5. What is the most common type of star found in the Milky Way?</p>
+                <input id="q1a" type="radio" name="q5" value="a"> Red Dwarf <br>
+                <input id="q1b" type="radio" name="q5" value="b"> Brown Dwarf <br>
+                <input id="q1c" type="radio" name="q5" value="c"> White Dwarf <br>
+                <input id="q1d" type="radio" name="q5" value="d"> Black Dwarf <br>
+                <br>
+
+                <p>6. What is the largest type of star in the universe?</p>
+                <input id="q1a" type="radio" name="q6" value="a"> Black Supergiant <br>
+                <input id="q1b" type="radio" name="q6" value="b"> White Supergiant <br>
+                <input id="q1c" type="radio" name="q6" value="c"> Brown Supergiant <br>
+                <input id="q1d" type="radio" name="q6" value="d"> Red Supergiant<br>
+                <br>
+
+                <p>7. What has a gravitational pull so strong that even light cannot escape it?</p>
+                <input id="q1a" type="radio" name="q7" value="a"> Planetary Nebula  <br>
+                <input id="q1b" type="radio" name="q7" value="b"> Dark Matter <br>
+                <input id="q1c" type="radio" name="q7" value="c"> Jupitar <br>
+                <input id="q1d" type="radio" name="q7" value="d"> A Black Hole <br>
+                <br>
+
+                <p>8. What is the diameter of the Earth’s moon?</p>
+                <input id="q1a" type="radio" name="q8" value="a"> 215.9 miles <br>
+                <input id="q1b" type="radio" name="q8" value="b"> 2,159 miles <br>
+                <input id="q1c" type="radio" name="q8" value="c"> 20,159 miles <br>
+                <input id="q1d" type="radio" name="q8" value="d"> 200,159 miles <br>
+                <br>
+
+                <p>9. What is the longest continuous time a human has spent in space?</p>
+                <input id="q1a" type="radio" name="q9" value="a"> 1037 days <br>
+                <input id="q1b" type="radio" name="q9" value="b"> 737 days <br>
+                <input id="q1c" type="radio" name="q9" value="c"> 437 days <br>
+                <input id="q1d" type="radio" name="q9" value="d"> 137 days <br>
+                <br>
+
+                <p>10. What is the farthest distance from Earth a manned mission has traveled?</p>
+                <input id="q1a" type="radio" name="q10" value="a"> 24,865,500 miles <br>
+                <input id="q1b" type="radio" name="q10" value="b"> 2,486,550 miles <br>
+                <input id="q1c" type="radio" name="q10" value="c"> 248,655 miles <br>
+                <input id="q1d" type="radio" name="q10" value="d"> 24,865 miles <br>
+                <br>
+
+                <input id="submit-button" class="btn btn-dark" type="button" value="Submit">
+              
+            </form>
+
+        </div>
+
+        <div id="results-screen">
+            <h1>Results!</h1>
+            <h5>Correct Answers: <div id="correct"></div></h5>
+            <h5>Incorrect Answers: <div id="incorrect"></div></h5>
+            <h5>Unanswered: <div id="unanswered"></div></h5>
+            <button id="reset-button" class="btn btn-dark" type="button">Try again!</button>
+        </div>
+
+    <!-- JavaScript -->
+    <script src="assets/javascript/app.js "></script>
+
+</body>
+</html>
