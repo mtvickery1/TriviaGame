@@ -145,7 +145,7 @@ function check () {
 var reset = $("#reset-button").on('click', function() {
     $("#question-screen").show();
     $("#results-screen").hide();
-    timer = 61;
+    timer = 121;
 });
 ///////////////////////////////////////////////////////////////
 //TIMES UP
